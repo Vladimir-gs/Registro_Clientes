@@ -14,4 +14,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="DAL\" />
+    <Folder Include="BLL\" />
+    <Folder Include="Pages\C_Clientes\" />
+    <Folder Include="Pages\R_Clientes\" />
+  </ItemGroup>
+
 </Project>
