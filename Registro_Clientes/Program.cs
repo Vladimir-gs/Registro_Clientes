@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
+using Registro_Clientes.BLL;
 using Registro_Clientes.DAL;
 using Registro_Clientes.Models;
 
@@ -13,7 +14,7 @@ builder.Services.AddServerSideBlazor();
 var ConStr = builder.Configuration.GetConnectionString("ConStr");
 
 builder.Services.AddDbContext<Context>(Options => Options.UseSqlite(ConStr));
-
+builder.Services.AddScoped<ClientesBLL>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
